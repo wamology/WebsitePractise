@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+                <header>
+                    <a href="#">yummy.eats</a>
+                </header>
+                <h1> <span>The Healthy </span>Eating Experince</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet necessitatibus excepturi 
+                    dolores itaque autem illo repellendus cum, natus harum corporis!
+                </p>
+                <div class="form-container">
+                    <form action="">
+                        <div class="form-left">
+                            <label for="city">Enter your city :</label>
+                            <input type="text" name="city" id="city">
+                            <p>Example "Lahore"</p>
+                        </div>
+                        <input type="button" value="Find Food Now" id="cta-btn">
+                    </form>
+                </div>
+        </section>
+    </div>
+
+    <div>
+        <section class="authenic">
+        <div class="right-col">
+            <h2>Authenic. Delicious</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Impedit ratione animi numquam explicabo quod. Nobis exercitationem ut explicabo eveniet atque numquam tempora mollitia voluptatem, 
+                a architecto maxime dicta nemo ullam?
+            </p>
+        </div>
+            <img src="img/food.jpg" alt="food-image">
+        </section>
+    </div>
+    
+
+
+    <script>
+        
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+                overlay.style.display = 'grid';
+        })
+
+
+    </script>
+</body>
+</html>
